@@ -1,0 +1,24 @@
+.myProjectsBlock {
+    min-height: 100%;
+    background-color: #b1d195;
+    padding-bottom: 30px;
+}
+
+.myProjectsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    background-color: blanchedalmond;
+}
+
+.myProjects {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+

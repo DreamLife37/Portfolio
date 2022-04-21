@@ -1,0 +1,31 @@
+.myProject {
+    width: 350px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.image {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projectImgContainer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("http://sktkomi.ru/wp-content/uploads/2021/08/1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.myProjectButton {
+
+}
+

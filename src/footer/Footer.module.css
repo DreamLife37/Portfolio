@@ -1,0 +1,20 @@
+.footerBlock {
+    height: 25vh;
+    background-color: cadetblue;
+}
+
+.footerContainer {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.iconsContainer {
+    background-color: #cdefc5;
+    display: flex;
+
+}
+
+.socialIconItem {
+    height: 25px;
+    width: 25px;
+}
