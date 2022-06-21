@@ -1,18 +1,22 @@
 import style from './MyProject.module.css'
-import imageMyProject from './../../assets/images/imageMyProject.jpg'
+
 
 type MyProjectType = {
     title: string
     description: string
+    style?: any
 }
 export const MyProject = (props: MyProjectType) => {
     return (
-        <div className={style.myProject}>
-            <div className={style.projectImgContainer}>
+        <div className={style.portfolio}>
+            <div className={style.projectImgContainer} style={props.style}>
                 <a className={style.myProjectButton}>Посмотреть</a>
             </div>
-            <h3>{props.title}</h3>
-            <span className={style.description}>{props.description}</span>
+            <div className={style.content}>
+                <h3 className={style.projectTitle}>{props.title}</h3>
+                <p><span className={style.description}>{props.description}</span></p>
+            </div>
         </div>
     )
 }
+
