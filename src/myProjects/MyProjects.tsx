@@ -1,4 +1,4 @@
-import style from './MyProjects.module.css'
+import style from './MyProjects.module.scss'
 import styleContainer from './../common/styles/Container.module.css'
 import {MyProject} from "./myProject/MyProject";
 import {Title} from "../common/components/title/Title";

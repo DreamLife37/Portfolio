@@ -1,4 +1,4 @@
-import style from './Title.module.css'
+import style from './Title.module.scss'
 
 type TitleType = {
     title: string
