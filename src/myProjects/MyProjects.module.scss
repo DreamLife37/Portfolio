@@ -1,7 +1,8 @@
+@import '../common/styles/sass/variables';
 
 .myProjectsBlock {
   min-height: 100%;
-  background-color: #101010;
+  background-color: $bgColor;
   padding-bottom: 30px;
 
   .myProjectsContainer {

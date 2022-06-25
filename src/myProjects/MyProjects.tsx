@@ -19,7 +19,7 @@ export const MyProjects = () => {
                                description={'Description Social Network'}/>
                     <MyProject style={social} title={'Todolist'}
                                description={'Description Todolist'}/>
-                    <MyProject style={social} title={'Project_Food'}
+                    <MyProject style={social} title={'Project Food'}
                                description={'Description project for a restaurant. JavaScript'}/>
                 </div>
             </div>

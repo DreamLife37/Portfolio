@@ -1,6 +1,9 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
 .portfolio {
   width: 350px;
-  background-color: #191919;
+  background-color: $bgColor;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +27,7 @@
     &::before {
       position: absolute;
       content: '';
-      background-color: black;
+      background-color: $bgColor;
       top: 0;
       bottom: 0;
       left: 0;
@@ -33,16 +36,13 @@
     }
 
     .myProjectButton {
-      font-family: 'Poppins', sans-serif;
+      @include text(16px, 38px);
       text-decoration: none;
-      color: #ffffff;
       padding: 0 23px;
       height: 40px;
       display: inline-block;
-      line-height: 38px;
-      border: 2px solid rgba(255, 255, 255, 0.3);
+      border: 2px solid $secondaryColor;
       border-radius: 4px;
-      font-size: 16px;
       position: relative;
       //z-index: 1;
       transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -50,11 +50,11 @@
       //background: transparent;
 
       &:hover {
-        background-color: #FD4766FF;
-        border: 2px solid #FD4766;
+        background-color: $primaryColor;
+        border: 2px solid $primaryColor;
 
         &:hover :before {
-          background-color: #FD4766FF;
+          background-color: $primaryColor;
         }
       }
 
@@ -66,13 +66,12 @@
     padding-top: 25px;
 
     .projectTitle {
-      font-family: 'Poppins', sans-serif;
-      color: white;
+      @include text(30px, 8px);
     }
 
     .description {
-      font-family: 'Poppins', sans-serif;
-      color: white;
+      @include text(16px, 8px);
+      color: $secondaryColor;
     }
 
   }

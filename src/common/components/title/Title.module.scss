@@ -1,3 +1,4 @@
+@import '../../../common/styles/sass/variables';
 
 .title {
   padding-top: 60px;
@@ -9,7 +10,7 @@
     line-height: 18px;
     font-size: 16px;
     border-radius: 4px;
-    background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #FD4766 79.69%);
+    background: $colorGradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -20,13 +21,13 @@
     font-weight: 600;
     line-height: 62px;
     margin-bottom: 20px;
-    color: #fff;
+    color: $textColor;
   }
 
   & p {
     font-size: 18px;
     line-height: 30px;
-    color: #C6C9D8BF;
+    color: $secondaryColor;
   }
 }
 
