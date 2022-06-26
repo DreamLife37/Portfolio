@@ -47,7 +47,6 @@
       //z-index: 1;
       transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       letter-spacing: 0.2px;
-      //background: transparent;
 
       &:hover {
         background-color: $primaryColor;
@@ -57,8 +56,6 @@
           background-color: $primaryColor;
         }
       }
-
-
     }
   }
 
