@@ -1,0 +1,15 @@
+.skills {
+    display: flex;
+}
+
+.skills ul {
+    list-style: none
+}
+
+.titleSkill {
+    color: white;
+}
+
+.subTitleSkill {
+    color: #C6C9D8BF;
+}

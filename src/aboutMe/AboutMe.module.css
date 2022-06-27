@@ -1,0 +1,51 @@
+.skillsBlock {
+    display: flex;
+    background-color: #101010FF;
+}
+
+/*.skillsContainer {*/
+/*    flex-direction: column;*/
+/*    justify-content: flex-start;*/
+/*}*/
+
+.aboutMe {
+    /*border: 1px solid white;*/
+    /*width: 100%;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-wrap: wrap;*/
+    /*box-sizing: border-box;*/
+
+    margin: 5px;
+    padding: 5px;
+    flex-grow: 2;
+}
+
+.avatar {
+    flex-grow: 1;
+    color: white;
+}
+
+.menuTab {
+    display: flex;
+
+}
+
+.navMenu {
+
+}
+
+.navItem {
+    /*@include text(16px, 38px);*/
+    text-decoration: none;
+    padding: 0 23px;
+    height: 40px;
+    display: inline-block;
+    background-color: #FD4766FF;
+    border-radius: 4px;
+    position: relative;
+    margin-right: 20px;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    letter-spacing: 0.2px;
+}
+

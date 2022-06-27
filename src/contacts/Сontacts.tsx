@@ -10,7 +10,7 @@ export const Contacts = () => {
                        subTitle={'Let\'s Say Hi'}
                        description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}/>
                 <p className={style.email}>
-                    Contact Email: <a className={style.imHover} href="mailto:example@gmail.com">example@gmail.com</a>
+                    Contact Email: <a className={style.linkEmail} href="mailto:example@gmail.com">example@gmail.com</a>
                 </p>
                 <form className={style.form}>
                     <input placeholder="Your name" type="text" name="name" className={style.input}/>
