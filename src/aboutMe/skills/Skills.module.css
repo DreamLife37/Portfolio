@@ -3,7 +3,8 @@
 }
 
 .skills ul {
-    list-style: none
+    list-style: none;
+    padding-inline-start: 0
 }
 
 .titleSkill {

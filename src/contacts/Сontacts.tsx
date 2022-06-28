@@ -1,5 +1,5 @@
 import style from './Сontacts.module.scss'
-import styleContainer from './../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.css'
 import {Title} from "../common/components/title/Title";
 
 export const Contacts = () => {

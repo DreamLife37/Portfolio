@@ -1,6 +1,8 @@
-import style from './Footer.module.css'
+import style from './Footer.module.scss'
 import styleContainer from "../common/styles/Container.module.css";
-
+import telegramIcon from '../assets/images/telegram.png'
+import linkedinIcon from '../assets/images/linkedin.png'
+import githubIcon from '../assets/images/github.png'
 
 export const Footer = () => {
     return (
@@ -8,11 +10,19 @@ export const Footer = () => {
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <h3>Andrey Schavelev</h3>
                 <div className={style.iconsContainer}>
-                    <div className={style.socialIconItem}>1</div>
-                    <div className={style.socialIconItem}>2</div>
-                    <div className={style.socialIconItem}>3</div>
+                    <a href={'https://t.me/DevAndreyIT'}>
+                        <img className={style.socialIconItem} src={telegramIcon}/>
+                    </a>
+
+                    <a href={'https://www.linkedin.com/in/devandreyit/'}>
+                        <img className={style.socialIconItem} src={linkedinIcon}/>
+                    </a>
+
+                    <a href={'https://github.com/DreamLife37'}>
+                        <img className={style.socialIconItem} src={githubIcon}/>
+                    </a>
                 </div>
-                <div>2022 Все права защищены</div>
+                <div>2022 All rights reserved</div>
             </div>
         </div>
 

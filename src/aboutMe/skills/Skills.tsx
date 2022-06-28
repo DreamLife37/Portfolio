@@ -1,10 +1,10 @@
 import style from './Skills.module.css'
 
-type SkillType = {
-    title: string
-    description: string
+type SkillsType = {
+    activeTab: boolean
 }
-export const Skills = () => {
+
+export const Skills = (props: SkillsType) => {
     return (
         <div className={style.skills}>
             <ul>
