@@ -2,7 +2,7 @@
 @import '../common/styles/sass/mixins';
 
 .mainBlock {
-  height: 100vh;
+
   background-color: #121528;
   font-family: $fontFamily;
 
@@ -36,6 +36,7 @@
 }
 
 .photo {
+  margin: 10px;
   width: 300px;
   height: 380px;
   background-color: $textColor;

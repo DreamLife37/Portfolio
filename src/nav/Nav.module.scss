@@ -2,21 +2,22 @@
 @import '../common/styles/sass/mixins.scss';
 
 .nav {
-  width: 500px;
   justify-content: space-between;
+
   display: flex;
-  padding-right: 150px;
+
   font-family: $fontFamily;
 
 }
 
 .nav a {
   @include text(16px, 38px);
+
   color: $textColor;
   text-decoration: none;
   font-weight: 500;
   font-family: $fontFamily;
-  padding: 0 23px;
+
   height: 40px;
   display: inline-block;
   position: relative;
@@ -27,7 +28,5 @@
   &:hover {
     background-color: $primaryColor;
     transition: 0.3s;
-
-
   }
 }

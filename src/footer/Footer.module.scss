@@ -2,12 +2,11 @@
 @import '../common/styles/sass/mixins';
 
 .footerBlock {
-  height: 25vh;
   background-color: $bgColor;
   font-family: $fontFamily;
 
   .footerContainer {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
 
     & h3 {

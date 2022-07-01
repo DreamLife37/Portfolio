@@ -12,9 +12,8 @@ export const Main = () => {
                         <span>Frontend Developer</span>
                     </h1>
 
-                    <div className={style.projectImgContainer}>
-                        <a className={style.downloadCV} href={'ya.ru'}>DOWNLOAD CV</a>
-                    </div>
+                    <a className={style.downloadCV} href={'ya.ru'}>DOWNLOAD CV</a>
+
                 </div>
                 <div className={style.photo}></div>
             </div>
