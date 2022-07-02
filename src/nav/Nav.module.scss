@@ -1,29 +1,28 @@
 @import '../common/styles/sass/variables.scss';
 @import '../common/styles/sass/mixins.scss';
 
-.nav {
+.navSection {
+  font-family: $fontFamily;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
-  display: flex;
-
-  font-family: $fontFamily;
-
+  @media screen and (max-width: 576px) {
+    //flex-direction: column;
+  }
 }
 
-.nav a {
-  @include text(16px, 38px);
-
-  color: $textColor;
-  text-decoration: none;
-  font-weight: 500;
-  font-family: $fontFamily;
-
-  height: 40px;
-  display: inline-block;
-  position: relative;
+.navItem {
+  padding: 10px 15px;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   letter-spacing: 0.2px;
   border-radius: 4px;
+  position: relative;
+
+  & a {
+    color: $textColor;
+    text-decoration: none;
+  }
 
   &:hover {
     background-color: $primaryColor;
