@@ -16,27 +16,25 @@ export const AboutMe = () => {
 
         <div className={style.aboutMeBlock}>
             <div className={`${styleContainer.container} ${style.aboutMeContainer}`}>
-                {/*<div className={style.avatar}>Image</div>*/}
                 <div className={style.aboutMe}>
                     <Title title={'About Me'}
                            subTitle={'My About Details'}
                            description={'There are many variations of passages of Lorem Ipsum available'}/>
                     <div className={style.menuTab}>
                         <div className={style.navMenu}>
-                            <a onClick={() => setCurrentTab('MAIN_SKILLS')} className={currentTab == 'MAIN_SKILLS' ? style.navItemActive : style.navItem}>Main skills</a>
+                            <a onClick={() => setCurrentTab('MAIN_SKILLS')} className={currentTab === 'MAIN_SKILLS' ? style.navItemActive : style.navItem}>Main skills</a>
                         </div>
                         <div className={style.navMenu}>
                             <a onClick={() => setCurrentTab('EDUCATION')}
-                               className={currentTab == 'EDUCATION' ? style.navItemActive : style.navItem}>Education</a>
+                               className={currentTab === 'EDUCATION' ? style.navItemActive : style.navItem}>Education</a>
                         </div>
-
                     </div>
 
                     <div className={style.contentTab}>
-                        {(currentTab == 'MAIN_SKILLS') &&
+                        {(currentTab === 'MAIN_SKILLS') &&
                             <Skills activeTab/>
                         }
-                        {(currentTab == 'EDUCATION') &&
+                        {(currentTab === 'EDUCATION') &&
                             <Education/>
                         }</div>
                 </div>

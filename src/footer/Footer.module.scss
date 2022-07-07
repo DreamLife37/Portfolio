@@ -6,8 +6,8 @@
   font-family: $fontFamily;
 
   .footerContainer {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+
 
     & h3 {
       @include text(16px, 28px);

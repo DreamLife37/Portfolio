@@ -13,4 +13,11 @@
 
 .subTitleSkill {
     color: #C6C9D8BF;
+    display: flex;
+    align-items: center;
+}
+
+.skillsIconItem {
+    width: 36px;
+    padding: 5px;
 }

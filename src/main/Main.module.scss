@@ -2,9 +2,11 @@
 @import '../common/styles/sass/mixins';
 
 .mainBlock {
-
+  display: flex;
+  align-items: center;
   background-color: #121528;
   font-family: $fontFamily;
+  min-height: 90vh;
 
   .titleBlock {
 
