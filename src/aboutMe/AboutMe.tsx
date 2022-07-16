@@ -17,12 +17,16 @@ export const AboutMe = () => {
         <div className={style.aboutMeBlock}>
             <div className={`${styleContainer.container} ${style.aboutMeContainer}`}>
                 <div className={style.aboutMe}>
-                    <Title title={'About Me'}
-                           subTitle={'My About Details'}
-                           description={'There are many variations of passages of Lorem Ipsum available'}/>
+                    <div className={style.aboutMeWrapper}><Title title={'About Me'}
+                                                                 subTitle={'My About Details'}
+                                                                 description={'I\'m a results-oriented frontend developer.\n' +
+                                                                     'I\'m learning, developing, constantly improving my skills, I want to participate in cool projects.'}/>
+                    </div>
                     <div className={style.menuTab}>
                         <div className={style.navMenu}>
-                            <a onClick={() => setCurrentTab('MAIN_SKILLS')} className={currentTab === 'MAIN_SKILLS' ? style.navItemActive : style.navItem}>Main skills</a>
+                            <a onClick={() => setCurrentTab('MAIN_SKILLS')}
+                               className={currentTab === 'MAIN_SKILLS' ? style.navItemActive : style.navItem}>Main
+                                skills</a>
                         </div>
                         <div className={style.navMenu}>
                             <a onClick={() => setCurrentTab('EDUCATION')}

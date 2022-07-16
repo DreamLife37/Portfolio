@@ -10,7 +10,22 @@ export const Education = () => {
                 </li>
 
                 <li className={style.subTitleSkill}>
-                    <p className={style.titleSkill}>Front End Development<span>  -
+                    <p className={style.titleSkill}>The Complete JavaScript and React Course <span>  -
+               Udemy, Ivan Petrychenko</span></p> 2020-2021
+                </li>
+
+                <li className={style.subTitleSkill}>
+                    <p className={style.titleSkill}>Javascript marathon<span>  -
+               Vladilen Minin</span></p> 2021
+                </li>
+
+                <li className={style.subTitleSkill}>
+                    <p className={style.titleSkill}>Javascript marathon<span>  -
+               Zar Zakharov</span></p> 2021
+                </li>
+
+                <li className={style.subTitleSkill}>
+                    <p className={style.titleSkill}>Front-End Development<span>  -
                IT Incubator</span></p> 2022
                 </li>
 

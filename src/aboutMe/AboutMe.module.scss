@@ -7,8 +7,13 @@
   min-height: 100%;
   flex-direction: column;
 
+  .aboutMeWrapper {
+    max-width: 60%;
+  }
+
   .aboutMeContainer {
     flex-direction: column;
+
   }
 
   .avatar {
@@ -17,6 +22,7 @@
   }
 
   .aboutMe {
+
 
     .menuTab {
       @include text(16px, 38px);
