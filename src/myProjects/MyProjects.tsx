@@ -21,6 +21,8 @@ export const MyProjects = () => {
                                description={'Description Todolist'}/>
                     <MyProject style={social} title={'Project Food'}
                                description={'Description project for a restaurant. JavaScript'}/>
+                    <MyProject style={social} title={'Project Food'}
+                               description={'Description project for a restaurant. JavaScript'}/>
                 </div>
             </div>
 

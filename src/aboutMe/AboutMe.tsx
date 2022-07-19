@@ -32,6 +32,10 @@ export const AboutMe = () => {
                             <a onClick={() => setCurrentTab('EDUCATION')}
                                className={currentTab === 'EDUCATION' ? style.navItemActive : style.navItem}>Education</a>
                         </div>
+                        <div className={style.navMenu}>
+                            <a onClick={() => setCurrentTab('WORK_EXPERIENCE')}
+                               className={currentTab === 'WORK_EXPERIENCE' ? style.navItemActive : style.navItem}>Work experience</a>
+                        </div>
                     </div>
 
                     <div className={style.contentTab}>
