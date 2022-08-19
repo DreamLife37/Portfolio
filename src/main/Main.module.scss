@@ -8,39 +8,45 @@
   font-family: $fontFamily;
   min-height: 90vh;
 
-  .titleBlock {
+  .container {
+    @include container();
+    @include flex(row,centet,cente, nowrap);
+    .titleBlock {
 
-    .subTitle {
-      color: $secondaryColor;
-      font-size: 18px;
-    }
+      .subTitle {
+        color: $secondaryColor;
+        font-size: 18px;
+      }
 
-    .title {
-      color: white;
-      font-size: 54px;
-      line-height: 68px;
+      .title {
+        color: white;
+        font-size: 54px;
+        line-height: 68px;
 
-      & span {
-        color: $primaryColor;
+        & span {
+          color: $primaryColor;
+        }
+      }
+
+      .downloadCV {
+        @include text(16px, 38px);
+        @include button();
+
+        &:hover {
+          background-color: $primaryColor;
+          border: 2px solid $primaryColor;
+        }
       }
     }
 
-    .downloadCV {
-      @include text(16px, 38px);
-      @include button();
-
-      &:hover {
-        background-color: $primaryColor;
-        border: 2px solid $primaryColor;
-      }
+    .photo {
+      margin: 10px;
+      width: 300px;
+      height: 380px;
+      background-color: $textColor;
+      border-radius: 15px;
     }
   }
+
 }
 
-.photo {
-  margin: 10px;
-  width: 300px;
-  height: 380px;
-  background-color: $textColor;
-  border-radius: 15px;
-}

@@ -7,7 +7,7 @@ import photo from '../assets/images/photo.jpg'
 export const Main = () => {
     return (
         <div className={style.mainBlock}>
-            <div className={styleContainer.container}>
+            <div className={style.container}>
                 <div className={style.titleBlock}>
                     <span className={style.subTitle}>Hi</span>
                     <h1 className={style.title}>I'm Andrey Schavelev
