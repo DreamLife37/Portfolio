@@ -1,5 +1,5 @@
 import style from './Main.module.scss'
-import styleContainer from './../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container1.module.css'
 // @ts-ignore
 import cv from '../assets/files/cv.pdf'
 import photo from '../assets/images/photo.jpg'

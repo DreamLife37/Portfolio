@@ -1,5 +1,5 @@
 import style from './Footer.module.scss'
-import styleContainer from "../common/styles/Container.module.css";
+import styleContainer from "../common/styles/Container1.module.css";
 import telegramIcon from '../assets/images/telegram.png'
 import linkedinIcon from '../assets/images/linkedin.png'
 import githubIcon from '../assets/images/github.png'
@@ -9,7 +9,7 @@ export const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <Fade delay={500} triggerOnce duration={1000}>
-                <div className={`${styleContainer.container} ${style.footerContainer}`}>
+                <div className={style.footerContainer}>
                     <h3>Andrey Schavelev</h3>
                     <div className={style.iconsContainer}>
                         <a href={'https://t.me/DevAndreyIT'}>
