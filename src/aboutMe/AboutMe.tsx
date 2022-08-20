@@ -15,7 +15,7 @@ export const AboutMe = () => {
 
     return (
 
-        <div className={style.aboutMeBlock}>
+        <div id='aboutMe' className={style.aboutMeBlock}>
             <Fade delay={500} triggerOnce duration={1000}>
                 <div className={`${styleContainer.container} ${style.aboutMeContainer}`}>
                     <Title title={'About Me'}
