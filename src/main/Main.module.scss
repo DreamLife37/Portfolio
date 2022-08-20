@@ -2,15 +2,16 @@
 @import '../common/styles/sass/mixins';
 
 .mainBlock {
-  display: flex;
-  align-items: center;
   background-color: #121528;
   font-family: $fontFamily;
-  min-height: 90vh;
+  min-height: 100vh;
+  //padding: 20px 0;
+  //@include flex(row, center, center, nowrap);
 
-  .container {
+  .mainContainer {
     @include container();
-    @include flex(row,centet,cente, nowrap);
+    @include flex(row, space-between, center, wrap);
+
     .titleBlock {
 
       .subTitle {
