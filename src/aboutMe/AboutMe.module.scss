@@ -5,24 +5,14 @@
   background-color: $bgSecondColor;
   font-family: $fontFamily;
   min-height: 100%;
-  flex-direction: column;
-
-  .aboutMeWrapper {
-    max-width: 60%;
-  }
+  padding-bottom: 30px;
 
   .aboutMeContainer {
     flex-direction: column;
-    justify-content: flex-start;
-  }
 
-  .avatar {
-    flex-grow: 1;
-    color: $textColor;
-  }
-
-  .aboutMe {
-
+    .aboutMeWrapper {
+      //max-width: 60%;
+    }
 
     .menuTab {
       @include text(16px, 38px);
@@ -54,7 +44,10 @@
     .contentTab {
 
     }
+
   }
+
+
 }
 
 
