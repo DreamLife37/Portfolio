@@ -5,7 +5,7 @@ import cv from '../assets/files/cv.pdf'
 import photo from '../assets/images/photo.jpg'
 import {Fade} from 'react-awesome-reveal'
 import ReactTypingEffect from 'react-typing-effect'
-
+import Tilt from 'react-parallax-tilt';
 
 export const Main = () => {
     return (
@@ -24,7 +24,9 @@ export const Main = () => {
                         <a href={cv} className={style.downloadCV} target={"_blank"} rel="noopener noreferrer">DOWNLOAD
                             CV</a>
                     </div>
+                    <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
                     <img className={style.photo} src={photo}/>
+                    </Tilt>
                 </div>
 
                 </Fade>
