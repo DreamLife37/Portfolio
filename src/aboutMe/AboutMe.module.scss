@@ -8,7 +8,8 @@
   padding-bottom: 30px;
 
   .aboutMeContainer {
-    flex-direction: column;
+    @include container();
+    @include flex(column, space-between, flex-start, wrap);
 
     .aboutMeWrapper {
       //max-width: 60%;

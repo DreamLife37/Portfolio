@@ -1,4 +1,5 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .myProjectsBlock {
   min-height: 100%;
@@ -7,10 +8,10 @@
   font-family: $fontFamily;
 
   .myProjectsContainer {
-    flex-direction: column;
+    @include container();
+    @include flex(column, space-between, flex-start, wrap);
 
     .myProjects {
-      border: 1px solid;
       width: 100%;
       display: flex;
       flex-wrap: wrap;

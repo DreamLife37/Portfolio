@@ -1,5 +1,5 @@
 import style from './Сontacts.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container1.module.css'
 import {Title} from "../common/components/title/Title";
 import {Fade} from "react-awesome-reveal";
 
@@ -7,7 +7,7 @@ export const Contacts = () => {
     return (
         <div id='contacts' className={style.contactsBlock}>
             <Fade delay={500} triggerOnce duration={1000}>
-                <div className={`${styleContainer.container} ${style.contactsContainer}`}>
+                <div className={style.contactsContainer}>
                     <Title title={'Hire Me.'}
                            subTitle={'Let\'s Say Hi'}
                            description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}/>

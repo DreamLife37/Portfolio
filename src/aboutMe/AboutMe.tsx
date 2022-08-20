@@ -1,5 +1,5 @@
 import style from './AboutMe.module.scss'
-import styleContainer from './../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container1.module.css'
 import {Title} from "../common/components/title/Title";
 import {Skills} from './skills/Skills';
 import {useState} from "react";
@@ -17,7 +17,7 @@ export const AboutMe = () => {
 
         <div id='aboutMe' className={style.aboutMeBlock}>
             <Fade delay={500} triggerOnce duration={1000}>
-                <div className={`${styleContainer.container} ${style.aboutMeContainer}`}>
+                <div className={style.aboutMeContainer}>
                     <Title title={'About Me'}
                            subTitle={'My About Details'}
                            description={'I\'m a results-oriented frontend developer.\n' +

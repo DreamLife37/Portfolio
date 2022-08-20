@@ -1,5 +1,5 @@
 import style from './MyProjects.module.scss'
-import styleContainer from './../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container1.module.css'
 import {MyProject} from "./myProject/MyProject";
 import {Title} from "../common/components/title/Title";
 import imageMyProject from './../assets/images/imageMyProject.jpg'
@@ -12,19 +12,23 @@ export const MyProjects = () => {
     return (
         <div id='projects' className={style.myProjectsBlock}>
             <Fade delay={500} triggerOnce duration={1000}>
-                <div className={`${styleContainer.container} ${style.myProjectsContainer}`}>
+                <div className={style.myProjectsContainer}>
                     <Title title={'My Latest Project'}
                            subTitle={'My complete project'}
                            description={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'}/>
                     <div className={style.myProjects}>
                         <MyProject style={social} title={'Social Network'}
-                                   description={'Description Social Network'}/>
+                                   description={'Description Social Network'}
+                                   link={'https://github.com/DreamLife37/React_Project_Social_Network_TS'}/>
                         <MyProject style={social} title={'Todolist'}
-                                   description={'Description Todolist'}/>
+                                   description={'Description Todolist'}
+                                   link={'https://github.com/DreamLife37/React_Project_Todolist_TS'}/>
                         <MyProject style={social} title={'Project Food'}
-                                   description={'Description project for a restaurant. JavaScript'}/>
-                        <MyProject style={social} title={'Project Food'}
-                                   description={'Description project for a restaurant. JavaScript'}/>
+                                   description={'Description project for a restaurant. JavaScript'}
+                                   link={'https://github.com/DreamLife37/JS_Project_Food'}/>
+                        <MyProject style={social} title={'Project Cards'}
+                                   description={'Description project for a restaurant. JavaScript'}
+                                   link={'https://github.com/DreamLife37/React_Project_Cards'}/>
                     </div>
                 </div>
             </Fade>

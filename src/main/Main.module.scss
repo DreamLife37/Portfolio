@@ -8,7 +8,6 @@
   display: flex;
   align-items: center;
   //padding: 20px 0;
-  //@include flex(row, center, center, nowrap);
 
   .mainContainer {
     @include container();
