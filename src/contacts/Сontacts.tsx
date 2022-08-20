@@ -5,7 +5,7 @@ import {Fade} from "react-awesome-reveal";
 
 export const Contacts = () => {
     return (
-        <div className={style.contactsBlock}>
+        <div id='contacts' className={style.contactsBlock}>
             <Fade delay={500} triggerOnce duration={1000}>
                 <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                     <Title title={'Hire Me.'}

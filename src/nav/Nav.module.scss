@@ -18,11 +18,9 @@
   letter-spacing: 0.2px;
   border-radius: 4px;
   position: relative;
-
-  & a {
-    color: $textColor;
-    text-decoration: none;
-  }
+  color: $textColor;
+  text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $primaryColor;

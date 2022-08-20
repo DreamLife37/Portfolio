@@ -10,7 +10,7 @@ export const MyProjects = () => {
         backgroundImage: `url(${imageMyProject})`
     };
     return (
-        <div className={style.myProjectsBlock}>
+        <div id='projects' className={style.myProjectsBlock}>
             <Fade delay={500} triggerOnce duration={1000}>
                 <div className={`${styleContainer.container} ${style.myProjectsContainer}`}>
                     <Title title={'My Latest Project'}
