@@ -3,13 +3,7 @@
 
 .navSection {
   font-family: $fontFamily;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  @media screen and (max-width: 576px) {
-    //flex-direction: column;
-  }
+  @include flex(row, space-between, center, wrap);
 
   a {
     padding: 10px 15px;
@@ -30,6 +24,10 @@
   .active {
     background-color: $primaryColor;
     transition: 0.3s;
+  }
+
+  @media screen and (max-width: 576px) {
+    display: none;
   }
 
 }
