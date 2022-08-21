@@ -2,6 +2,7 @@ import style from './Header.module.scss'
 import {Nav} from "./nav/Nav";
 import React from "react";
 import {LanguageType} from '../App';
+import {BurgerNav} from "./burgerNav/BurgerNav";
 
 type HeaderType = {
     language: LanguageType
@@ -24,6 +25,7 @@ export const Header: React.FC<HeaderType> = ({language, setLanguage}) => {
                     </div>
                 </div>
                 <Nav language={language}/>
+                <BurgerNav language={language}/>
             </div>
         </div>
     )
