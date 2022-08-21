@@ -3,6 +3,7 @@ import {Link} from "react-scroll";
 import {navData} from "../../data/navData";
 import {LanguageType} from "../../App";
 import React, {useState} from "react";
+import iconBurger from '../../assets/images/hamburgerMenu.svg'
 
 
 export const BurgerNav: React.FC<{ language: LanguageType }> = ({language}) => {
@@ -25,7 +26,7 @@ export const BurgerNav: React.FC<{ language: LanguageType }> = ({language}) => {
                 <Link activeClass={style.active} to="contacts" spy={true} smooth={true}
                       duration={500} offset={-heightHeader}>{langData.contacts}</Link>
             </div>
-            <div className={style.burgerButton} onClick={onBurgerBtn}></div>
+            <img className={style.burgerButton} onClick={onBurgerBtn} src={iconBurger}></img>
         </div>
     )
 }
