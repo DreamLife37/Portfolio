@@ -1,28 +1,32 @@
 import style from './Main.module.scss'
-import styleContainer from '../common/styles/Container1.module.css'
-// @ts-ignore
-import cv from '../assets/files/cv.pdf'
 import photo from '../assets/images/photo.jpg'
 import {Fade} from 'react-awesome-reveal'
 import ReactTypingEffect from 'react-typing-effect'
 import Tilt from 'react-parallax-tilt';
+import React from "react";
+import {LanguageType} from "../App";
+import {mainData} from "../data/mainData";
 
-export const Main = () => {
+type MainType = {
+    language: LanguageType
+}
+
+export const Main: React.FC<MainType> = ({language}) => {
+    const langData = mainData[language]
     return (
-
         <div id='main' className={style.mainBlock}>
             <Fade delay={100} triggerOnce style={{width: '100%'}}>
                 <div className={` ${style.mainContainer}`}>
                     <div className={style.titleBlock}>
-                        <span className={style.subTitle}>Hi</span>
-                        <h1 className={style.title}>I'm Andrey Schavelev
+                        <span className={style.subTitle}>{langData.subTitle}</span>
+                        <h1 className={style.title}>{langData.title}
                             <br/>
                             <ReactTypingEffect
-                                text={'Frontend Developer'}
+                                text={langData.typingEffect}
                             />
                         </h1>
-                        <a href={cv} className={style.downloadCV} target={"_blank"} rel="noopener noreferrer">DOWNLOAD
-                            CV</a>
+                        <a href={langData.linkCv} className={style.downloadCV} target={"_blank"}
+                           rel="noopener noreferrer">{langData.downloadCv}</a>
                     </div>
                     <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
                         <img className={style.photo} src={photo}/>
