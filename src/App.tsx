@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './App.css';
 import {Header} from "./header/Header";
@@ -8,15 +8,18 @@ import {Contacts} from "./contacts/Сontacts";
 import {Footer} from "./footer/Footer";
 import {AboutMe} from "./aboutMe/AboutMe";
 
+export type LanguageType = 'ru' | 'en'
+
 function App() {
+    const [language, setLanguage] = useState<LanguageType>('en')
     return (
         <div className="App">
-            <Header/>
-            <Main/>
-            <AboutMe/>
-            <MyProjects/>
-            <Contacts/>
-            <Footer/>
+            <Header language={language} setLanguage={setLanguage}/>
+            <Main language={language}/>
+            <AboutMe language={language}/>
+            <MyProjects language={language}/>
+            <Contacts language={language}/>
+            <Footer language={language}/>
         </div>
     );
 }

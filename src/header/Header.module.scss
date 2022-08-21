@@ -13,7 +13,16 @@
   z-index: 2;
 
   .headerSection {
+    @include flex(row, space-between, center, wrap);
 
+    .language {
+      cursor: pointer;
+      color: white;
+      padding-right: 10px;
+    }
+    .active {
+      color: $primaryColor;
+    }
   }
 
   .logo {

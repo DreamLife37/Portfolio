@@ -1,41 +1,38 @@
 import style from './AboutMe.module.scss'
-import styleContainer from '../common/styles/Container1.module.css'
 import {Title} from "../common/components/title/Title";
 import {Skills} from './skills/Skills';
-import {useState} from "react";
+import React, {useState} from "react";
 import {Education} from "./education/Education";
 import {Fade} from "react-awesome-reveal";
+import {aboutMeData} from "../data/aboutMeData";
+import {LanguageType} from "../App";
 
+export const AboutMe: React.FC<{ language: LanguageType }> = ({language}) => {
 
-export const AboutMe = () => {
+    type Tabs = 'MAIN_SKILLS' | 'EDUCATION' | 'WORK_EXPERIENCE'
 
-    const Tabs = 'MAIN_SKILLS' || 'EDUCATION'
-
-    const [currentTab, setCurrentTab] = useState('MAIN_SKILLS')
-
+    const [currentTab, setCurrentTab] = useState<Tabs>('MAIN_SKILLS')
+    const langData = aboutMeData[language]
     return (
 
         <div id='aboutMe' className={style.aboutMeBlock}>
             <Fade delay={500} triggerOnce duration={1000}>
                 <div className={style.aboutMeContainer}>
-                    <Title title={'About Me'}
-                           subTitle={'My About Details'}
-                           description={'I\'m a results-oriented frontend developer.\n' +
-                               'I\'m learning, developing, constantly improving my skills'}/>
+                    <Title title={langData.title}
+                           subTitle={langData.subTitle}
+                           description={langData.description}/>
                     <div className={style.menuTab}>
                         <div className={style.navMenu}>
                             <a onClick={() => setCurrentTab('MAIN_SKILLS')}
-                               className={currentTab === 'MAIN_SKILLS' ? style.navItemActive : style.navItem}>Main
-                                skills</a>
+                               className={currentTab === 'MAIN_SKILLS' ? style.navItemActive : style.navItem}>{langData.nameTabs[0]}</a>
                         </div>
                         <div className={style.navMenu}>
                             <a onClick={() => setCurrentTab('EDUCATION')}
-                               className={currentTab === 'EDUCATION' ? style.navItemActive : style.navItem}>Education</a>
+                               className={currentTab === 'EDUCATION' ? style.navItemActive : style.navItem}>{langData.nameTabs[1]}</a>
                         </div>
                         <div className={style.navMenu}>
                             <a onClick={() => setCurrentTab('WORK_EXPERIENCE')}
-                               className={currentTab === 'WORK_EXPERIENCE' ? style.navItemActive : style.navItem}>Work
-                                experience</a>
+                               className={currentTab === 'WORK_EXPERIENCE' ? style.navItemActive : style.navItem}>{langData.nameTabs[2]}</a>
                         </div>
                     </div>
                     <div className={style.contentTab}>

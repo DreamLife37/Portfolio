@@ -1,14 +1,29 @@
 import style from './Header.module.scss'
-import {Nav} from "../nav/Nav";
+import {Nav} from "./nav/Nav";
+import React from "react";
+import {LanguageType} from '../App';
 
-export const Header = () => {
+type HeaderType = {
+    language: LanguageType
+    setLanguage: (language: LanguageType) => void
+}
+
+export const Header: React.FC<HeaderType> = ({language, setLanguage}) => {
     return (
         <div className={style.header}>
             <div className={style.headerSection}>
                 <div className={style.logo}>DevAndreyIT</div>
             </div>
             <div className={style.headerSection}>
-                <Nav/>
+                <div>
+                    <div className={`${style.language} ${language === 'ru' ? style.active : ''}`}
+                         onClick={() => setLanguage('ru')}>Rus
+                    </div>
+                    <div className={`${style.language} ${language === 'en' ? style.active : ''}`}
+                         onClick={() => setLanguage('en')}>Eng
+                    </div>
+                </div>
+                <Nav language={language}/>
             </div>
         </div>
     )
