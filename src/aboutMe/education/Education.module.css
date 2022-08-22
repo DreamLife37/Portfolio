@@ -1,16 +1,30 @@
-.skills {
+.educationContainer {
     display: flex;
 }
 
-.skills ul {
+.educationContainer ul{
     list-style: none;
-    padding-inline-start: 0
 }
 
-.titleSkill {
+.title {
+    font-weight: 500;
     color: white;
 }
 
-.subTitleSkill {
+.title:before {
+    content: '\25A0';
+    color: #FD4766FF;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+
+.subTitle {
+    color: white;
+    font-weight: 100;
+    font-size: small
+}
+
+.subTitle p {
     color: #C6C9D8BF;
+    font-weight: 500;
 }

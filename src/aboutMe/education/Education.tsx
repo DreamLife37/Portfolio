@@ -2,33 +2,45 @@ import style from './Education.module.css'
 
 export const Education = () => {
     return (
-        <div className={style.skills}>
+        <div className={style.educationContainer}>
             <ul>
-                <li className={style.subTitleSkill}>
-                    <p className={style.titleSkill}>Front-End Development<span>  -
-               IT Incubator</span></p> 2021 - 2022
+                <li>
+                    <p className={style.title}>Front-End Development - IT Incubator</p>
+                    <p className={style.subTitle}>React / Redux / Redux Toolkit /
+                        TS / Router-dom / Axios / Formik
+                        <p>2021 - 2022</p>
+                    </p>
                 </li>
 
-                <li className={style.subTitleSkill}>
-                    <p className={style.titleSkill}>Javascript marathon<span>  -
-               Vladilen Minin</span></p> 2021
+                <li>
+                    <p className={style.title}>Javascript marathon - Vladilen Minin</p>
+                    <p className={style.subTitle}> JavaScript
+                        <p>2021</p>
+                    </p>
                 </li>
 
-                <li className={style.subTitleSkill}>
-                    <p className={style.titleSkill}>Javascript marathon<span>  -
-               Zar Zakharov</span></p> 2021
+                <li>
+                    <p className={style.title}>Javascript marathon - Zar Zakharov</p>
+                    <p className={style.subTitle}> JavaScript / Promise
+                        <p>2021</p>
+                    </p>
                 </li>
 
-                <li className={style.subTitleSkill}>
-                    <p className={style.titleSkill}>The Complete JavaScript and React Course <span>  -
-               Udemy, Ivan Petrychenko</span></p> 2020 - 2021
+                <li>
+                    <p className={style.title}>The Complete JavaScript and React Course -
+                        Udemy, Ivan Petrychenko</p>
+                    <p className={style.subTitle}> JavaScript / React / Fetch API / Redux
+                        <p>2020-2021</p>
+                    </p>
                 </li>
 
-                <li className={style.subTitleSkill}>
-                    <p className={style.titleSkill}>Automation of technical processes<span>  -
-                Ivanovo State Power Engineering University</span></p> 2008 - 2012
+                <li>
+                    <p className={style.title}>Automation of technical processes -
+                        Ivanovo State Power Engineering University</p>
+                    <p className={style.subTitle}> JavaScript / React / Fetch API / Redux
+                        <p>2008-2012</p>
+                    </p>
                 </li>
-
             </ul>
         </div>
     )
