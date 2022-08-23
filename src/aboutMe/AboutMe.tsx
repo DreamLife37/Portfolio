@@ -44,7 +44,7 @@ export const AboutMe: React.FC<{ language: LanguageType }> = ({language}) => {
                             <Education/>
                         }
                         {(currentTab === 'WORK_EXPERIENCE') &&
-                            <WorkExperience/>
+                            <WorkExperience language={language}/>
                         }
                     </div>
 
