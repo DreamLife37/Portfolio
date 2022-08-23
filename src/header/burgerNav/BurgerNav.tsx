@@ -10,7 +10,6 @@ export const BurgerNav: React.FC<{ language: LanguageType }> = ({language}) => {
     const [isOpen, setIsOpen] = useState(false)
     const onBurgerBtn = () => {
         setIsOpen(!isOpen)
-        console.log(isOpen)
     }
     const langData = navData[language]
     const heightHeader = 80

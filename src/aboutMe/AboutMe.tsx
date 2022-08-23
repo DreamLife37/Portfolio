@@ -6,6 +6,7 @@ import {Education} from "./education/Education";
 import {Fade} from "react-awesome-reveal";
 import {aboutMeData} from "../data/aboutMeData";
 import {LanguageType} from "../App";
+import {WorkExperience} from "./work/WorkExperience";
 
 export const AboutMe: React.FC<{ language: LanguageType }> = ({language}) => {
 
@@ -41,7 +42,11 @@ export const AboutMe: React.FC<{ language: LanguageType }> = ({language}) => {
                         }
                         {(currentTab === 'EDUCATION') &&
                             <Education/>
-                        }</div>
+                        }
+                        {(currentTab === 'WORK_EXPERIENCE') &&
+                            <WorkExperience/>
+                        }
+                    </div>
 
                 </div>
             </Fade>
