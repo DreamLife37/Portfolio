@@ -1,45 +1,45 @@
-import style from './Education.module.css'
+import style from './Education.module.scss'
 
 export const Education = () => {
     return (
         <div className={style.educationContainer}>
             <ul>
                 <li>
-                    <p className={style.title}>Front-End Development - IT Incubator</p>
-                    <p className={style.subTitle}>React / Redux / Redux Toolkit /
+                    <div className={style.title}>Front-End Development - IT Incubator</div>
+                    <div className={style.subTitle}>React / Redux / Redux Toolkit /
                         TS / Router-dom / Axios / Formik
-                        <p>2021 - 2022</p>
-                    </p>
+                        <div>2021 - 2022</div>
+                    </div>
                 </li>
 
                 <li>
-                    <p className={style.title}>Javascript marathon - Vladilen Minin</p>
-                    <p className={style.subTitle}> JavaScript
-                        <p>2021</p>
-                    </p>
+                    <div className={style.title}>Javascript marathon - Vladilen Minin</div>
+                    <div className={style.subTitle}> JavaScript
+                        <div>2021</div>
+                    </div>
                 </li>
 
                 <li>
-                    <p className={style.title}>Javascript marathon - Zar Zakharov</p>
-                    <p className={style.subTitle}> JavaScript / Promise
-                        <p>2021</p>
-                    </p>
+                    <div className={style.title}>Javascript marathon - Zar Zakharov</div>
+                    <div className={style.subTitle}> JavaScript / Promise
+                        <div>2021</div>
+                    </div>
                 </li>
 
                 <li>
-                    <p className={style.title}>The Complete JavaScript and React Course -
-                        Udemy, Ivan Petrychenko</p>
-                    <p className={style.subTitle}> JavaScript / React / Fetch API / Redux
-                        <p>2020-2021</p>
-                    </p>
+                    <div className={style.title}>The Complete JavaScript and React Course -
+                        Udemy, Ivan Petrychenko</div>
+                    <div className={style.subTitle}> JavaScript / React / Fetch API / Redux
+                        <div>2020-2021</div>
+                    </div>
                 </li>
 
                 <li>
-                    <p className={style.title}>Automation of technical processes -
-                        Ivanovo State Power Engineering University</p>
-                    <p className={style.subTitle}> JavaScript / React / Fetch API / Redux
-                        <p>2008-2012</p>
-                    </p>
+                    <div className={style.title}>Engineer for technical
+                        process automation - Ivanovo State Power University</div>
+                    <div className={style.subTitle}>
+                        <div>2008-2012</div>
+                    </div>
                 </li>
             </ul>
         </div>
