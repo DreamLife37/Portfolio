@@ -2,7 +2,7 @@
 
 export const contactsData = {
     ru: {
-        subTitle: 'Наймите меня',
+        subTitle: 'Открыт для ваших предложений',
         title: 'Свяжитесь со мной',
         description: 'Рассматриваю варианты удаленной работы',
         contactEmail: 'Email для связи',
@@ -13,7 +13,7 @@ export const contactsData = {
     },
 
     en: {
-        subTitle: 'Hire Me.',
+        subTitle: 'Open for your suggestions.',
         title: 'Contact with me',
         description: 'Considering remote work',
         contactEmail: 'Contact Email',

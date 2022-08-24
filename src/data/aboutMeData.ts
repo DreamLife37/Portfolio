@@ -28,8 +28,10 @@ export const aboutMeData = {
     en: {
         subTitle: 'My About Details',
         title: 'About Me',
-        description: 'I\'m a results-oriented front-end developer.\n' +
-            'I\'m learning, developing, constantly improving my skills',
+        description: 'I am front-end developer with experience in\n' +
+            'creating SPA, using React, Redux, TypeScript.\n' +
+            'I\'m learning, developing, constantly improving my skills, I want to participate in cool projects. \n' +
+            'My next goal is to become a full stack developer. Open for your suggestions.',
         nameTabs: ['Main skills', 'Education', 'Work experience'],
         workExperience: {
             frontEnd: {

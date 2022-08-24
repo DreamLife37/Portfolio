@@ -1,5 +1,7 @@
 // @ts-ignore
-import cvEn from '../assets/files/cv.pdf'
+import cvEn from '../assets/files/resumeEn.pdf'
+// @ts-ignore
+import cvRu from '../assets/files/resumeRu.pdf'
 
 export const mainData = {
     ru: {
@@ -7,7 +9,7 @@ export const mainData = {
         title: 'Я, Андрей Щавелев',
         typingEffect: 'Front-end разработчик',
         downloadCv: 'Скачать CV',
-        linkCv: '',
+        linkCv: cvRu,
         footerName: 'Андрей Щавелев',
         copyright: 'Все права защищены'
     },
