@@ -1,38 +1,39 @@
-import style from './Skills.module.css'
-import ReactIcon from "../../assets/images/react.png";
-import ReduxIcon from "../../assets/images/redux.png";
-import GitIcon from "../../assets/images/github.png";
-import SassIcon from "../../assets/images/sass.png";
+import style from './Skills.module.scss'
 
-type SkillsType = {
-    activeTab: boolean
-}
+import React from "react";
 
-export const Skills = (props: SkillsType) => {
+
+export const Skills = () => {
     return (
-        <div className={style.skills}>
+        <div className={style.skillsContainer}>
             <ul>
-                <li className={style.subTitleSkill}>
-                    <p className={style.titleSkill}>JavaScript library and frameworks<span>  -
-                React  </span></p>  <img className={style.skillsIconItem} src={ReactIcon}/>
+                <li>
+                    <span className={style.title}>Javascript, Typescript, ES6+</span>
                 </li>
-
-                <li className={style.subTitleSkill}>
-                    <p className={style.titleSkill}>CSS preprocessors<span>  -
-                SASS</span></p>
-                    <img className={style.skillsIconItem} src={SassIcon}/>
+                <li>
+                    <span className={style.title}>JavaScript library and frameworks - React</span>
                 </li>
-
-                <li className={style.subTitleSkill}>
-                    <p className={style.titleSkill}>State management libraries<span>  -
-                Redux</span></p>
-                    <img className={style.skillsIconItem} src={ReduxIcon}/>
+                <li>
+                    <span className={style.title}>CSS preprocessors - SASS</span>
                 </li>
-
-                <li className={style.subTitleSkill}>
-                    <p className={style.titleSkill}>Version control<span>  -
-                Git</span></p>
-                    <img className={style.skillsIconItem} src={GitIcon}/>
+                <li>
+                    <span className={style.title}>State management libraries - Redux, Redux Toolkit</span>
+                </li>
+                <li>
+                    <span
+                        className={style.title}>Version control - Git</span>
+                </li>
+                <li>
+                    <span
+                        className={style.title}>Unit tests, Storybook</span>
+                </li>
+                <li>
+                    <span
+                        className={style.title}>Axios, Rest API</span>
+                </li>
+                <li>
+                    <span
+                        className={style.title}>Material Ul, Ant design</span>
                 </li>
 
             </ul>

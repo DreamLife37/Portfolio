@@ -38,7 +38,7 @@ export const AboutMe: React.FC<{ language: LanguageType }> = ({language}) => {
                     </div>
                     <div className={style.contentTab}>
                         {(currentTab === 'MAIN_SKILLS') &&
-                            <Skills activeTab/>
+                            <Skills/>
                         }
                         {(currentTab === 'EDUCATION') &&
                             <Education/>
