@@ -15,15 +15,18 @@ export const Footer: React.FC<{ language: LanguageType }> = ({language}) => {
                 <div className={style.footerContainer}>
                     <h3>{langData.footerName}</h3>
                     <div className={style.iconsContainer}>
-                        <a href={'https://t.me/DevAndreyIT'}>
+                        <a href={'https://t.me/DevAndreyIT'} target={"_blank"}
+                           rel="noopener noreferrer">
                             <img className={style.socialIconItem} src={telegramIcon} alt={'Telegram Icon'}/>
                         </a>
 
-                        <a href={'https://www.linkedin.com/in/devandreyit/'}>
+                        <a href={'https://www.linkedin.com/in/devandreyit/'} target={"_blank"}
+                           rel="noopener noreferrer">
                             <img className={style.socialIconItem} src={linkedinIcon} alt={'Linkedin Icon'}/>
                         </a>
 
-                        <a href={'https://github.com/DreamLife37'}>
+                        <a href={'https://github.com/DreamLife37'} target={"_blank"}
+                           rel="noopener noreferrer">
                             <img className={style.socialIconItem} src={githubIcon} alt={'Github Icon'}/>
                         </a>
                     </div>
