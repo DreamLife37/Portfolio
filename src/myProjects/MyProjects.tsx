@@ -22,16 +22,16 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
                            description={langData.description}/>
                     <div className={style.myProjects}>
                         <MyProject langDataButton={langData.nameButton} image={social} title={'Social Network'}
-                                   description={'Description Social Network'}
+                                   description={'Stack: TS, React, Redux, Redux-Thunk, React Router DOM, Axios, Formik'}
                                    link={'https://github.com/DreamLife37/React_Project_Social_Network_TS'}/>
                         <MyProject langDataButton={langData.nameButton} image={social} title={'Todolist'}
-                                   description={'Description Todolist'}
+                                   description={'Stack: TS, React, Redux, Redux-Thunk, React Router DOM, Axios, Formik, MUI, Storybook'}
                                    link={'https://github.com/DreamLife37/React_Project_Todolist_TS'}/>
                         <MyProject langDataButton={langData.nameButton} image={social} title={'Project Food'}
-                                   description={'Description project for a restaurant. JavaScript'}
+                                   description={'Stack: JavaScript, Fetch API'}
                                    link={'https://github.com/DreamLife37/JS_Project_Food'}/>
                         <MyProject langDataButton={langData.nameButton} image={social} title={'Project Cards'}
-                                   description={'Description project for a restaurant. JavaScript'}
+                                   description={'Stack: TS, React, Redux Toolkit, Redux-Thunk, React Router DOM, Axios, Formik, MUI'}
                                    link={'https://github.com/DreamLife37/React_Project_Cards'}/>
                     </div>
                 </div>

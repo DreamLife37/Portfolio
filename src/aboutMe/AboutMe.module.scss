@@ -16,7 +16,7 @@
     }
 
     .menuTab {
-      @include text(16px, 38px);
+      @include text(16px, 28px);
       border: 1px solid $borderColor;
       border-radius: 4px;
       display: inline-flex;
@@ -25,14 +25,20 @@
       .navMenu {
         .navItem {
           color: $textColor;
-          padding: 0 23px;
+          padding: 0 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 60px;
         }
 
         .navItemActive {
           text-decoration: none;
-          padding: 0 20px;
-          height: 40px;
-          display: inline-block;
+          padding: 0 15px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           background-color: $primaryColor;
           border-radius: 4px;
           position: relative;
