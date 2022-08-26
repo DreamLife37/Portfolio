@@ -15,7 +15,8 @@ export const MyProject: React.FC<MyProjectType> = ({title, description, image, l
         <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
             <div className={style.portfolio}>
                 <div className={style.projectImgContainer} style={image}>
-                    <a className={style.myProjectButton} href={link}>{langDataButton}</a>
+                    <a className={style.myProjectButton} href={link} target={"_blank"}
+                       rel="noopener noreferrer">{langDataButton}</a>
                 </div>
                 <div className={style.content}>
                     <h3 className={style.projectTitle}>{title}</h3>
