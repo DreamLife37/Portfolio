@@ -2,6 +2,7 @@ import React from "react";
 import {useFormik} from "formik";
 import style from './Сontacts.module.scss'
 import {LangContactsDataType} from "../data/contactsData";
+import axios from "axios";
 
 type FormikErrorType = {
     name?: string
@@ -33,10 +34,9 @@ export const ContactsForm: React.FC<{ langData: LangContactsDataType }> = ({lang
             return errors;
         },
         onSubmit: async values => {
-            console.log(values)
+            axios.post('https://gmail-server-devandrey.herokuapp.com/sendMessage', values)
+                .then(() => alert('Yoy message has been sent'))
             formik.resetForm()
-
-
         },
     })
 
