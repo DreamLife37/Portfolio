@@ -10,7 +10,8 @@ export const contactsData = {
         errorEmail: 'Не верно указан e-mail',
         placeholderEmail: 'Ваш e-mail',
         placeholderMessage: 'Ваше сообщение',
-        buttonSend: 'Отправить'
+        buttonSend: 'Отправить',
+        messageAfter: 'Спасибо за ваше сообщение, я как можно скорее отвечу на него 🧑‍💼'
     },
 
     en: {
@@ -23,7 +24,8 @@ export const contactsData = {
         errorEmail: 'Invalid email address',
         placeholderEmail: 'Your e-mail',
         placeholderMessage: 'Enter your message',
-        buttonSend: 'Send'
+        buttonSend: 'Send',
+        messageAfter: 'Thank you for your message 🧑‍💼'
     },
 
 }
