@@ -2,14 +2,18 @@ import style from './Сontacts.module.scss'
 import {Title} from "../common/components/title/Title";
 import {Fade} from "react-awesome-reveal";
 import {LanguageType} from "../App";
-import React from "react";
+import React, {useState} from "react";
 import {contactsData} from "../data/contactsData";
 import {ContactsForm} from "./ContactsForm";
+import {Loading} from "../common/components/loading/Loading";
+import {Loading1} from "../common/components/loading/Loading1";
 
+export type sendingStatusType = 'idle' | 'loading' | 'success'
 
 export const Contacts: React.FC<{ language: LanguageType }> = ({language}) => {
     const langData = contactsData[language]
 
+    let [sendingStatus, setSendingStatus] = useState<sendingStatusType>('idle')
 
     return (
         <div id='contacts' className={style.contactsBlock}>
@@ -22,8 +26,11 @@ export const Contacts: React.FC<{ language: LanguageType }> = ({language}) => {
                         {langData.contactEmail}: <a className={style.linkEmail}
                                                     href="mailto:devandreyinfo@gmail.com">devandreyinfo@gmail.com</a>
                     </p>
+                    {sendingStatus === 'loading' && <Loading1/>}
 
-                    <ContactsForm langData={langData}/>
+                    {sendingStatus === 'success'
+                        ? <div className={style.sentMessage}>{langData.messageAfter}</div>
+                        : <ContactsForm setSendingStatus={setSendingStatus} langData={langData}/>}
                 </div>
             </Fade>
         </div>

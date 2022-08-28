@@ -3,6 +3,8 @@ import {useFormik} from "formik";
 import style from './Сontacts.module.scss'
 import {LangContactsDataType} from "../data/contactsData";
 import axios from "axios";
+import {sendingStatusType} from "./Сontacts";
+
 
 type FormikErrorType = {
     name?: string
@@ -10,7 +12,15 @@ type FormikErrorType = {
     message?: string
 }
 
-export const ContactsForm: React.FC<{ langData: LangContactsDataType }> = ({langData}) => {
+type ContactsFormType = {
+    langData: LangContactsDataType,
+    setSendingStatus: (sendingStatus: sendingStatusType) => void
+}
+
+export const ContactsForm: React.FC<ContactsFormType> = ({
+                                                             langData,
+                                                             setSendingStatus
+                                                         }) => {
 
     const formik = useFormik({
         initialValues: {
@@ -34,8 +44,9 @@ export const ContactsForm: React.FC<{ langData: LangContactsDataType }> = ({lang
             return errors;
         },
         onSubmit: async values => {
+            setSendingStatus('loading')
             axios.post('https://gmail-server-devandrey.herokuapp.com/sendMessage', values)
-                .then(() => alert('Yoy message has been sent'))
+                .then(() => setSendingStatus('success'))
             formik.resetForm()
         },
     })
@@ -64,11 +75,10 @@ export const ContactsForm: React.FC<{ langData: LangContactsDataType }> = ({lang
                 ? <div style={{color: '#ffffff', fontSize: '12px'}}>{formik.errors.message}</div>
                 : null}
 
-            <button type={'submit'} className={style.button}
+            <button type={'submit'} className={`${style.button} ${style.sending}`}
                     disabled={disabledButton}>
                 {langData.buttonSend}
             </button>
-
 
             {/*<p style={{fontSize: '14px'}}>*/}
             {/*    <NavLink to={Path.login}>Sign In</NavLink>*/}
