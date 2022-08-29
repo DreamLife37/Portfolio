@@ -57,10 +57,9 @@
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 10px;
-    border:
-            3px       /* width */
-            solid     /* style */
-            $borderColor;  /* color */
+    border: 3px /* width */
+    solid /* style */
+    $borderColor; /* color */
   }
 
   .form {
@@ -113,6 +112,14 @@
       border: 2px solid $primaryColor;
       background-color: rgba(28, 153, 254, 0);
       color: $primaryColor;
+    }
+
+    &:disabled {
+      background-color: $secondaryColor;
+      cursor: default;
+      border: none;
+      transition: none;
+      color: $textColor
     }
   }
 }
