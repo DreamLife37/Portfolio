@@ -45,18 +45,26 @@ export const ContactsForm: React.FC<ContactsFormType> = ({
         },
         onSubmit: async values => {
             setSendingStatus('loading')
+
             axios.post('https://gmail-server-devandrey.herokuapp.com/sendMessage', values)
-                .then(() => setSendingStatus('success'))
-            formik.resetForm()
+                .then((res) => {
+                    console.log(res)
+                    debugger
+                    if (res.statusText === 'OK') {
+                        formik.resetForm()
+                        setSendingStatus('success')
+                    } else setSendingStatus('error')
+                })
+                .catch(() => {
+                    debugger
+                })
         },
     })
 
-    const disabledButton = (formik.values.email && !formik.errors.name && !formik.errors.email) ? false : true
+    const disabledButton = (!formik.values.email || !formik.values.name || !formik.values.message || !!formik.errors.email)
 
     return <div>
-
         <form onSubmit={formik.handleSubmit} className={style.form}>
-
             <input {...formik.getFieldProps('name')} className={style.input} placeholder={langData.placeholderName}
             />
             {formik.touched.name && formik.errors.name
@@ -75,15 +83,10 @@ export const ContactsForm: React.FC<ContactsFormType> = ({
                 ? <div style={{color: '#ffffff', fontSize: '12px'}}>{formik.errors.message}</div>
                 : null}
 
-            <button type={'submit'} className={`${style.button} ${style.sending}`}
+            <button type={'submit'} className={style.button}
                     disabled={disabledButton}>
                 {langData.buttonSend}
             </button>
-
-            {/*<p style={{fontSize: '14px'}}>*/}
-            {/*    <NavLink to={Path.login}>Sign In</NavLink>*/}
-            {/*</p>*/}
-
         </form>
 
     </div>

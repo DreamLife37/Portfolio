@@ -4,7 +4,8 @@
 .mainBlock {
   background-color: #121528;
   font-family: $fontFamily;
-  min-height: calc(100vh - 80px);
+  //min-height: calc(100vh - 80px);
+  min-height: calc(100vh);
   display: flex;
   align-items: center;
 

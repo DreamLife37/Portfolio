@@ -8,12 +8,13 @@ import {ContactsForm} from "./ContactsForm";
 import {Loading} from "../common/components/loading/Loading";
 import {Loading1} from "../common/components/loading/Loading1";
 
-export type sendingStatusType = 'idle' | 'loading' | 'success'
+export type sendingStatusType = 'idle' | 'loading' | 'success' | 'error'
 
 export const Contacts: React.FC<{ language: LanguageType }> = ({language}) => {
     const langData = contactsData[language]
 
     let [sendingStatus, setSendingStatus] = useState<sendingStatusType>('idle')
+    console.log(sendingStatus)
 
     return (
         <div id='contacts' className={style.contactsBlock}>

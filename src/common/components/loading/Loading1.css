@@ -1,4 +1,4 @@
-.preloader_malc {
+.preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +9,7 @@
 }
 
 
-.preloader_malc div {
+.preloader div {
 
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
     position: fixed;
