@@ -56,10 +56,8 @@
     color: $textColor;
     padding: 30px;
     border-radius: 10px;
-    margin-bottom: 10px;
-    border: 3px /* width */
-    solid /* style */
-    $borderColor; /* color */
+    margin-bottom: 20px;
+    border: 3px solid $borderColor;
   }
 
   .form {

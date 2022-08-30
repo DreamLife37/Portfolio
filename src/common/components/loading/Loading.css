@@ -1,70 +1,76 @@
 .loaderContainer {
-
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, .6);
-    z-index: 99
+    z-index: 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.loaderContainer div {
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-    z-index: 999;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto
-}
-
-.loader {
+.lds-ellipsis {
+    display: inline-block;
     position: relative;
-    border-style: solid;
-    box-sizing: border-box;
-    border-width: 40px 60px 30px 60px;
-    border-color: #ffffff rgba(198, 201, 216, 0.75) rgba(198, 201, 216, 0.75) rgba(255, 255, 255, 0.2);
-    animation: envFloating 1s ease-in infinite alternate;
+    width: 80px;
+    height: 80px;
 }
 
-.loader:after {
-    content: "";
+.lds-ellipsis div {
     position: absolute;
-    right: 62px;
-    top: -40px;
-    height: 70px;
-    width: 50px;
-    background-image: linear-gradient(#fff 45px, transparent 0),
-    linear-gradient(#fff 45px, transparent 0),
-    linear-gradient(#fff 45px, transparent 0);
-    background-repeat: no-repeat;
-    background-size: 30px 4px;
-    background-position: 0px 11px, 8px 35px, 0px 60px;
-    animation: envDropping 0.75s linear infinite;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 
-@keyframes envFloating {
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
     0% {
-        transform: translate(-2px, -5px)
+        transform: scale(0);
     }
     100% {
-        transform: translate(0, 5px)
+        transform: scale(1);
     }
 }
 
-@keyframes envDropping {
+@keyframes lds-ellipsis3 {
     0% {
-        background-position: 100px 11px, 115px 35px, 105px 60px;
-        opacity: 1;
+        transform: scale(1);
     }
-    50% {
-        background-position: 0px 11px, 20px 35px, 5px 60px;
+    100% {
+        transform: scale(0);
     }
-    60% {
-        background-position: -30px 11px, 0px 35px, -10px 60px;
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
     }
-    75%, 100% {
-        background-position: -30px 11px, -30px 35px, -30px 60px;
-        opacity: 0;
+    100% {
+        transform: translate(24px, 0);
     }
 }

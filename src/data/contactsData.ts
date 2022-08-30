@@ -11,7 +11,8 @@ export const contactsData = {
         placeholderEmail: 'Ваш e-mail',
         placeholderMessage: 'Ваше сообщение',
         buttonSend: 'Отправить',
-        messageAfter: 'Спасибо за ваше сообщение, я как можно скорее отвечу на него 🧑‍💼'
+        messageAfter: 'Спасибо за ваше сообщение, я как можно скорее отвечу на него 🧑‍💼',
+        messageError: 'Что то пошло не так, проверьте соединение к интернет 😞'
     },
 
     en: {
@@ -25,7 +26,8 @@ export const contactsData = {
         placeholderEmail: 'Your e-mail',
         placeholderMessage: 'Enter your message',
         buttonSend: 'Send',
-        messageAfter: 'Thank you for your message 🧑‍💼'
+        messageAfter: 'Thank you for your message 🧑‍💼',
+        messageError: 'Something went wrong, check your internet connection 😞'
     },
 
 }

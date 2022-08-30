@@ -6,7 +6,6 @@ import React, {useState} from "react";
 import {contactsData} from "../data/contactsData";
 import {ContactsForm} from "./ContactsForm";
 import {Loading} from "../common/components/loading/Loading";
-import {Loading1} from "../common/components/loading/Loading1";
 
 export type sendingStatusType = 'idle' | 'loading' | 'success' | 'error'
 
@@ -14,7 +13,6 @@ export const Contacts: React.FC<{ language: LanguageType }> = ({language}) => {
     const langData = contactsData[language]
 
     let [sendingStatus, setSendingStatus] = useState<sendingStatusType>('idle')
-    console.log(sendingStatus)
 
     return (
         <div id='contacts' className={style.contactsBlock}>
@@ -27,13 +25,16 @@ export const Contacts: React.FC<{ language: LanguageType }> = ({language}) => {
                         {langData.contactEmail}: <a className={style.linkEmail}
                                                     href="mailto:devandreyinfo@gmail.com">devandreyinfo@gmail.com</a>
                     </p>
-                    {sendingStatus === 'loading' && <Loading1/>}
+                    {sendingStatus === 'loading' && <Loading/>}
 
                     {sendingStatus === 'success'
                         ? <div className={style.sentMessage}>{langData.messageAfter}</div>
                         : <ContactsForm setSendingStatus={setSendingStatus} langData={langData}/>}
+
+                    {sendingStatus === 'error' && <div className={style.sentMessage}>{langData.messageError}</div>}
+
+
                 </div>
-            </Fade>
-        </div>
+            </Fade></div>
     )
 }

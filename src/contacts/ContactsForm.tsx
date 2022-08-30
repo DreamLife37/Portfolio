@@ -2,8 +2,8 @@ import React from "react";
 import {useFormik} from "formik";
 import style from './Сontacts.module.scss'
 import {LangContactsDataType} from "../data/contactsData";
-import axios from "axios";
 import {sendingStatusType} from "./Сontacts";
+import {API} from "../common/api/api";
 
 
 type FormikErrorType = {
@@ -44,20 +44,21 @@ export const ContactsForm: React.FC<ContactsFormType> = ({
             return errors;
         },
         onSubmit: async values => {
-            setSendingStatus('loading')
-
-            axios.post('https://gmail-server-devandrey.herokuapp.com/sendMessage', values)
-                .then((res) => {
-                    console.log(res)
-                    debugger
-                    if (res.statusText === 'OK') {
-                        formik.resetForm()
-                        setSendingStatus('success')
-                    } else setSendingStatus('error')
-                })
-                .catch(() => {
-                    debugger
-                })
+            if (navigator.onLine) {
+                setSendingStatus('loading')
+                API.sendMessage(values)
+                    .then((res) => {
+                        if (res.statusText === 'OK') {
+                            formik.resetForm()
+                            setSendingStatus('success')
+                        } else setSendingStatus('error')
+                    })
+                    .catch((err) => {
+                        setSendingStatus('error')
+                    })
+            } else {
+                setSendingStatus('error')
+            }
         },
     })
 
