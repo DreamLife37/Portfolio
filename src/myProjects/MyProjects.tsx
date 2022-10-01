@@ -2,6 +2,7 @@ import style from './MyProjects.module.scss'
 import {MyProject} from "./myProject/MyProject";
 import {Title} from "../common/components/title/Title";
 import imageMyProject from './../assets/images/imageMyProject.jpg'
+import imageForSocialNetwork from './../assets/images/SocialNetwork.jpg'
 import {Fade} from "react-awesome-reveal";
 import {myProjectsData} from "../data/myProjectsData";
 import React from "react";
@@ -11,6 +12,10 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
     const social = {
         backgroundImage: `url(${imageMyProject})`
     };
+    const forSocialNetwork = {
+        backgroundImage: `url(${imageForSocialNetwork})`
+    };
+
 
     const langData = myProjectsData[language]
     return (
@@ -21,7 +26,7 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
                            subTitle={langData.subTitle}
                            description={langData.description}/>
                     <div className={style.myProjects}>
-                        <MyProject langDataButton={langData.nameButton} image={social} title={'Social Network'}
+                        <MyProject langDataButton={langData.nameButton} image={forSocialNetwork} title={'Social Network'}
                                    description={'Stack: TS, React, Redux, Redux-Thunk, React Router DOM, Axios, Formik'}
                                    link={'https://github.com/DreamLife37/React_Project_Social_Network_TS'}/>
                         <MyProject langDataButton={langData.nameButton} image={social} title={'Todolist'}
