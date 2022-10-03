@@ -33,7 +33,7 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
                                    description={'Stack: TS, React, Redux, Redux-Thunk, React Router DOM, Axios, Formik, MUI, Storybook'}
                                    link={'https://github.com/DreamLife37/React_Project_Todolist_TS'}/>
                         <MyProject langDataButton={langData.nameButton} image={social} title={'Project Food'}
-                                   description={'Stack: JavaScript, Fetch API'}
+                                   description={'Stack: JavaScript, Fetch API, AJAX, Axios, JSON-server'}
                                    link={'https://github.com/DreamLife37/JS_Project_Food'} />
                         <MyProject langDataButton={langData.nameButton} image={social} title={'Project Cards'}
                                    description={'Stack: TS, React, Redux Toolkit, Redux-Thunk, React Router DOM, Axios, Formik, MUI'}

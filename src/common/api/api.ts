@@ -2,7 +2,7 @@ import axios from "axios";
 
 const instance = axios.create({
     baseURL: 'https://gmail-server-devandrey.herokuapp.com/',
-    timeout: 5000
+    timeout: 8000
 });
 
 type valuesFormikType = {
