@@ -35,6 +35,10 @@ export const Skills = () => {
                     <span
                         className={style.title}>Material Ul, Ant design</span>
                 </li>
+                <li>
+                    <span
+                        className={style.title}>React Native</span>
+                </li>
 
             </ul>
         </div>
