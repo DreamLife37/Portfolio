@@ -3,6 +3,8 @@ import {MyProject} from "./myProject/MyProject";
 import {Title} from "../common/components/title/Title";
 import imageMyProject from './../assets/images/imageMyProject.jpg'
 import imageForSocialNetwork from './../assets/images/SocialNetwork.jpg'
+import imageForProjectFood from './../assets/images/ProjectFood.jpg'
+import imageForProjectCards from './../assets/images/ProjectCards.jpg'
 import {Fade} from "react-awesome-reveal";
 import {myProjectsData} from "../data/myProjectsData";
 import React from "react";
@@ -15,6 +17,14 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
     const forSocialNetwork = {
         backgroundImage: `url(${imageForSocialNetwork})`
     };
+    const forProjectFood = {
+        backgroundImage: `url(${imageForProjectFood})`
+    };
+
+    const forProjectCards = {
+        backgroundImage: `url(${imageForProjectCards})`
+    };
+
 
 
     const langData = myProjectsData[language]
@@ -26,16 +36,17 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
                            subTitle={langData.subTitle}
                            description={langData.description}/>
                     <div className={style.myProjects}>
-                        <MyProject langDataButton={langData.nameButton} image={forSocialNetwork} title={'Social Network'}
+                        <MyProject langDataButton={langData.nameButton} image={forSocialNetwork}
+                                   title={'Social Network'}
                                    description={'Stack: TS, React, Redux, Redux-Thunk, React Router DOM, Axios, Formik'}
                                    link={'https://github.com/DreamLife37/React_Project_Social_Network_TS'}/>
                         <MyProject langDataButton={langData.nameButton} image={social} title={'Todolist'}
                                    description={'Stack: TS, React, Redux, Redux-Thunk, React Router DOM, Axios, Formik, MUI, Storybook'}
                                    link={'https://github.com/DreamLife37/React_Project_Todolist_TS'}/>
-                        <MyProject langDataButton={langData.nameButton} image={social} title={'Project Food'}
+                        <MyProject langDataButton={langData.nameButton} image={forProjectFood} title={'Project Food'}
                                    description={'Stack: JavaScript, Fetch API, AJAX, Axios, JSON-server'}
-                                   link={'https://github.com/DreamLife37/JS_Project_Food'} />
-                        <MyProject langDataButton={langData.nameButton} image={social} title={'Project Cards'}
+                                   link={'https://github.com/DreamLife37/JS_Project_Food'}/>
+                        <MyProject langDataButton={langData.nameButton} image={forProjectCards} title={'Project Cards'}
                                    description={'Stack: TS, React, Redux Toolkit, Redux-Thunk, React Router DOM, Axios, Formik, MUI'}
                                    link={'https://github.com/DreamLife37/React_Project_Cards'}/>
                     </div>
