@@ -1,24 +1,26 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.c221e205.css",
-    "main.js": "/Portfolio/static/js/main.2308e0ea.js",
+    "main.js": "/Portfolio/static/js/main.f299a2a9.js",
     "static/js/787.aeca62f9.chunk.js": "/Portfolio/static/js/787.aeca62f9.chunk.js",
     "static/media/resumeRu.pdf": "/Portfolio/static/media/resumeRu.1640f2e243cf3f5eed5b.pdf",
     "static/media/resumeEn.pdf": "/Portfolio/static/media/resumeEn.a46c3063fef6e188d33c.pdf",
     "static/media/photo.jpg": "/Portfolio/static/media/photo.ebfca92695fb3c1c80c2.jpg",
     "static/media/imageMyProject.jpg": "/Portfolio/static/media/imageMyProject.00c110db2a5baacdccd1.jpg",
     "static/media/SocialNetwork.jpg": "/Portfolio/static/media/SocialNetwork.8c5c5ec7a000603a5cc9.jpg",
+    "static/media/ProjectFood.jpg": "/Portfolio/static/media/ProjectFood.88f7a130f39ffbb1d940.jpg",
+    "static/media/ProjectCards.jpg": "/Portfolio/static/media/ProjectCards.5228bb6900c40cc69ce4.jpg",
     "static/media/telegram.png": "/Portfolio/static/media/telegram.08777322cde5da5eb66f.png",
     "static/media/github.png": "/Portfolio/static/media/github.3e63503e54e0f9cc5bcd.png",
     "static/media/linkedin.png": "/Portfolio/static/media/linkedin.5fb8104a1196d92ab965.png",
     "index.html": "/Portfolio/index.html",
     "static/media/hamburgerMenu.svg": "/Portfolio/static/media/hamburgerMenu.1c1fe27bbd39ae96301a48dc6e7840c0.svg",
     "main.c221e205.css.map": "/Portfolio/static/css/main.c221e205.css.map",
-    "main.2308e0ea.js.map": "/Portfolio/static/js/main.2308e0ea.js.map",
+    "main.f299a2a9.js.map": "/Portfolio/static/js/main.f299a2a9.js.map",
     "787.aeca62f9.chunk.js.map": "/Portfolio/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c221e205.css",
-    "static/js/main.2308e0ea.js"
+    "static/js/main.f299a2a9.js"
   ]
 }
