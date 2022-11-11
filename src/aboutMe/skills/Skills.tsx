@@ -39,6 +39,10 @@ export const Skills = () => {
                     <span
                         className={style.title}>React Native</span>
                 </li>
+                <li>
+                    <span
+                        className={style.title}>Firebase</span>
+                </li>
 
             </ul>
         </div>

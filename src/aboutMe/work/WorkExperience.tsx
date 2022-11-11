@@ -68,7 +68,7 @@ export const WorkExperience: React.FC<{ language: LanguageType }> = ({language})
                 <li>
                     <div className={style.title}>{langData.workExperience.serviceEngineer.placeWork}</div>
                     <div className={style.subTitle}>{langData.workExperience.serviceEngineer.description}
-                        <div>2012 - 2022</div>
+                        <div>2012 - 2021</div>
                     </div>
                 </li>
 
