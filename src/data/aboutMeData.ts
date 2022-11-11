@@ -2,9 +2,9 @@ export const aboutMeData = {
     ru: {
         subTitle: 'Информация о учебе, работе и навыках',
         title: 'Обо мне',
-        description: 'Я фронтенд-разработчик, с опытом создания SPA, используя React, Redux, TypeScript.\n' +
-            'Учусь, развиваюсь, постоянно совершенствую свои навыки, хочу участвовать в крутых проектах. \n' +
-            'В будущем планирую стать full-stack разработчиком.',
+        description: `Доброго дня. Я фронтенд-разработчик, с опытом создания SPA, используя React, Redux, TypeScript.
+         Постоянно развиваю свои знания в глубь и в ширину, на данный момент разрабатываю front-end часть проекта, а также активно изучаю написание back-end.
+          Привык качественно и ответственно подходить к своей работе, всегда доводить дело до конца.`,
         nameTabs: ['Главные навыки', 'Образование', 'Опыт работы'],
         workExperience: {
             frontEnd: {
@@ -28,10 +28,10 @@ export const aboutMeData = {
     en: {
         subTitle: 'My About Details',
         title: 'About Me',
-        description: 'I am front-end developer with experience in\n' +
-            'creating SPA, using React, Redux, TypeScript.\n' +
-            'I\'m learning, developing, constantly improving my skills, I want to participate in cool projects. \n' +
-            'My next goal is to become a full stack developer. Open for your suggestions.',
+        description: `I am front-end developer with experience in
+            creating SPA, using React, Redux, TypeScript.
+            I am constantly developing my knowledge in depth and breadth, at the moment I develop the front-end part of the project, as well as actively studying the writing of the back-end. 
+            I am accustomed to quality and responsible approach to my work, always bring it to an end.`,
         nameTabs: ['Main skills', 'Education', 'Work experience'],
         workExperience: {
             frontEnd: {
