@@ -48,7 +48,7 @@ export const ContactsForm: React.FC<ContactsFormType> = ({
                 setSendingStatus('loading')
                 API.sendMessage(values)
                     .then((res) => {
-                        if (res.statusText === 'OK') {
+                        if (res.data === 'ok') {
                             formik.resetForm()
                             setSendingStatus('success')
                         } else setSendingStatus('error')
