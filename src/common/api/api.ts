@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: 'https://gmail-server-devandrey.herokuapp.com/',
+    baseURL: 'https://node-js-smtp-server.vercel.app',
     timeout: 8000
 });
 
