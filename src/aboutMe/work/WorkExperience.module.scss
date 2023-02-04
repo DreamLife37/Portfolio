@@ -14,7 +14,6 @@
     }
 
     & li {
-      padding-bottom: 20px;
       margin-left: 20px;
 
       & img {
@@ -44,6 +43,12 @@
         & div {
           color: $secondaryColor;
           font-weight: 500;
+          margin-bottom: 20px;
+        }
+
+        & p {
+          margin: 3px;
+          font-size: 14px;
         }
       }
     }

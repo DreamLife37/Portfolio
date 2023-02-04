@@ -8,7 +8,13 @@ export const aboutMeData = {
         nameTabs: ['Главные навыки', 'Образование', 'Опыт работы'],
         workExperience: {
             frontEnd: {
-                title: 'Мои работы как Front-end разработчика:',
+                work: 'Работа Front-end разработчиком',
+                desc1Work: 'Разработка и внедрение новых компонент и страниц с React/Redux',
+                desc2Work: 'Архитектура проекта, включая UI, BLL, DAL и серверные уровни',
+                desc3Work: 'Работа с сервером на основе swagger документации',
+                desc4Work: 'Оптимизация приложения',
+                desc5Work: 'Решение ошибок и проблем',
+                title: 'Мои проекты:',
                 projectCards: 'Проект: Обучающие карточки',
                 projectSocialNetwork: 'Проект: Социальная сеть',
                 projectTodolist: 'Проект: Список дел',
@@ -35,7 +41,13 @@ export const aboutMeData = {
         nameTabs: ['Main skills', 'Education', 'Work experience'],
         workExperience: {
             frontEnd: {
-                title: 'My work as a Front-end developer:',
+                work: 'Work as a Front-end Developer',
+                desc1Work: 'Design and implement new components and pages with React/Redux',
+                desc2Work: 'Architecture of project, including UI, BLL, DAL, and server layers',
+                desc3Work: 'Work with the server based on swagger documentation',
+                desc4Work: 'Refactoring and optimization of application',
+                desc5Work: 'Resolving bugs and issues',
+                title: 'My projects:',
                 projectCards: 'Project: Learning Cards',
                 projectSocialNetwork: 'Project: Social Network',
                 projectTodolist: 'Project: Todolist',
