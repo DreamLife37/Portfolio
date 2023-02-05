@@ -23,13 +23,23 @@ export const WorkExperience: React.FC<{ language: LanguageType }> = ({language})
                     </div>
                     <span className={style.title}>{'Freelance'}</span>
                     <div className={style.subTitle}>
-                        JavaScript, HTML, CSS
+                        JavaScript, HTML
                         <div>01.2021 - 02.2022</div>
                     </div>
                 </li>
             </ul>
             <ul>
                 <h4>{langData.workExperience.frontEnd.title}</h4>
+                <li>
+                    <span className={style.title}>{langData.workExperience.frontEnd.projectOnlineShop}</span>
+                    <a href={'https://github.com/DreamLife37/React_Project_Internet_Shop_with_Firebase'} target={"_blank"}><img
+                        src={githubIcon} alt={'Github Icon'}/></a>
+                    <div className={style.subTitle}>
+                        Stack: TS, React, Redux, Redux toolkit, React Router DOM, MUI, Formik, Firebase
+                        <div>2022</div>
+                    </div>
+                </li>
+
                 <li>
                     <span className={style.title}>{langData.workExperience.frontEnd.projectCards}</span>
                     <a href={'https://github.com/DreamLife37/React_Project_Cards'} target={"_blank"}><img

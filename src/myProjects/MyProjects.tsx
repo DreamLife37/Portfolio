@@ -2,6 +2,7 @@ import style from './MyProjects.module.scss'
 import {MyProject} from "./myProject/MyProject";
 import {Title} from "../common/components/title/Title";
 import imageMyProject from './../assets/images/imageMyProject.jpg'
+import imageForOnlineShop from './../assets/images/OnlineShop.jpg'
 import imageForSocialNetwork from './../assets/images/SocialNetwork.jpg'
 import imageForProjectFood from './../assets/images/ProjectFood.jpg'
 import imageForProjectCards from './../assets/images/ProjectCards.jpg'
@@ -11,8 +12,11 @@ import React from "react";
 import {LanguageType} from "../App";
 
 export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => {
-    const social = {
+    const todolist = {
         backgroundImage: `url(${imageMyProject})`
+    };
+    const onlineShop = {
+        backgroundImage: `url(${imageForOnlineShop})`
     };
     const forSocialNetwork = {
         backgroundImage: `url(${imageForSocialNetwork})`
@@ -26,7 +30,6 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
     };
 
 
-
     const langData = myProjectsData[language]
     return (
         <div id='projects' className={style.myProjectsBlock}>
@@ -36,11 +39,15 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
                            subTitle={langData.subTitle}
                            description={langData.description}/>
                     <div className={style.myProjects}>
+                        <MyProject langDataButton={langData.nameButton} image={onlineShop}
+                                   title={'Prototype online store'}
+                                   description={'Stack: TS, React, Redux, Redux toolkit, React Router DOM, MUI, Formik, Firebase'}
+                                   link={'https://github.com/DreamLife37/React_Project_Internet_Shop_with_Firebase'}/>
                         <MyProject langDataButton={langData.nameButton} image={forSocialNetwork}
                                    title={'Social Network'}
                                    description={'Stack: TS, React, Redux, Redux-Thunk, React Router DOM, Axios, Formik'}
                                    link={'https://github.com/DreamLife37/React_Project_Social_Network_TS'}/>
-                        <MyProject langDataButton={langData.nameButton} image={social} title={'Todolist'}
+                        <MyProject langDataButton={langData.nameButton} image={todolist} title={'Todolist'}
                                    description={'Stack: TS, React, Redux, Redux-Thunk, React Router DOM, Axios, Formik, MUI, Storybook'}
                                    link={'https://github.com/DreamLife37/React_Project_Todolist_TS'}/>
                         <MyProject langDataButton={langData.nameButton} image={forProjectFood} title={'Project Food'}
