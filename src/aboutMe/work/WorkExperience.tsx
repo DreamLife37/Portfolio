@@ -30,9 +30,22 @@ export const WorkExperience: React.FC<{ language: LanguageType }> = ({language})
             </ul>
             <ul>
                 <h4>{langData.workExperience.frontEnd.title}</h4>
+
+                <li>
+                    <span className={style.title}>{langData.workExperience.frontEnd.projectWbNotice}</span>
+                    <a href={'https://github.com/DreamLife37/Next.js_Project_Wildberries_Notice'} target={"_blank"}><img
+                        src={githubIcon} alt={'Github Icon'}/></a>
+                    <div className={style.subTitle}>
+                        <p>Front-end stack: Next, React Query</p>
+                        <p>Back-end stack: Node JS, Express</p>
+                        <div>2023</div>
+                    </div>
+                </li>
+
                 <li>
                     <span className={style.title}>{langData.workExperience.frontEnd.projectOnlineShop}</span>
-                    <a href={'https://github.com/DreamLife37/React_Project_Internet_Shop_with_Firebase'} target={"_blank"}><img
+                    <a href={'https://github.com/DreamLife37/React_Project_Internet_Shop_with_Firebase'}
+                       target={"_blank"}><img
                         src={githubIcon} alt={'Github Icon'}/></a>
                     <div className={style.subTitle}>
                         Stack: TS, React, Redux, Redux toolkit, React Router DOM, MUI, Formik, Firebase
