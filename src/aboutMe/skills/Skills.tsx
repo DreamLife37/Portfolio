@@ -9,6 +9,7 @@ export const Skills = () => {
             <ul>
                 <li><span className={style.title}>Javascript, Typescript, ES6+</span></li>
                 <li><span className={style.title}>JavaScript library and frameworks - React, Next, NodeJS</span></li>
+                <li><span className={style.title}>MongoDB</span></li>
                 <li><span className={style.title}>CSS preprocessors - SASS</span></li>
                 <li><span className={style.title}>State management libraries - Redux, Redux Toolkit</span></li>
                 <li><span className={style.title}>React Query</span></li>

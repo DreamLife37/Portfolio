@@ -37,7 +37,7 @@ export const WorkExperience: React.FC<{ language: LanguageType }> = ({language})
                         src={githubIcon} alt={'Github Icon'}/></a>
                     <div className={style.subTitle}>
                         <p>Front-end stack: Next, React Query</p>
-                        <p>Back-end stack: Node JS, Express</p>
+                        <p>Back-end stack: Node JS, Express, MongoDB</p>
                         <div>2023</div>
                     </div>
                 </li>

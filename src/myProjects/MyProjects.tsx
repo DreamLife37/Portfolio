@@ -45,7 +45,7 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
                     <div className={style.myProjects}>
                         <MyProject langDataButton={langData.nameButton} image={wbNotice}
                                    title={'Wildberries notice'}
-                                   description={'Back-end stack: Node JS, Express'}
+                                   description={'Back-end stack: Node JS, Express, MongoDB'}
                                    subDescription={'Front-end stack: Next, React Query'}
                                    link={'https://github.com/DreamLife37/Next.js_Project_Wildberries_Notice'}/>
                         <MyProject langDataButton={langData.nameButton} image={onlineShop}
