@@ -4,12 +4,13 @@ import style from './MyProject.module.scss'
 
 type MyProjectType = {
     title: string
+    subDescription?:string
     description: string
     image: any
     link: string
     langDataButton: string
 }
-export const MyProject: React.FC<MyProjectType> = ({title, description, image, link, langDataButton}) => {
+export const MyProject: React.FC<MyProjectType> = ({title,subDescription, description, image, link, langDataButton}) => {
     return (
 
         <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
@@ -20,7 +21,10 @@ export const MyProject: React.FC<MyProjectType> = ({title, description, image, l
                 </div>
                 <div className={style.content}>
                     <h3 className={style.projectTitle}>{title}</h3>
-                    <p><span className={style.description}>{description}</span></p>
+                    <div>
+                        <div className={style.description}>{subDescription}</div>
+                        <div className={style.description}>{description}</div>
+                    </div>
                 </div>
             </div>
         </Tilt>

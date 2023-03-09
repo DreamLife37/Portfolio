@@ -6,6 +6,7 @@ import imageForOnlineShop from './../assets/images/OnlineShop.jpg'
 import imageForSocialNetwork from './../assets/images/SocialNetwork.jpg'
 import imageForProjectFood from './../assets/images/ProjectFood.jpg'
 import imageForProjectCards from './../assets/images/ProjectCards.jpg'
+import imageForWbNotice from './../assets/images/WbNotice.jpg'
 import {Fade} from "react-awesome-reveal";
 import {myProjectsData} from "../data/myProjectsData";
 import React from "react";
@@ -17,6 +18,9 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
     };
     const onlineShop = {
         backgroundImage: `url(${imageForOnlineShop})`
+    };
+    const wbNotice = {
+        backgroundImage: `url(${imageForWbNotice})`
     };
     const forSocialNetwork = {
         backgroundImage: `url(${imageForSocialNetwork})`
@@ -39,6 +43,11 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
                            subTitle={langData.subTitle}
                            description={langData.description}/>
                     <div className={style.myProjects}>
+                        <MyProject langDataButton={langData.nameButton} image={wbNotice}
+                                   title={'Wildberries notice'}
+                                   description={'Back-end stack: Node JS, Express'}
+                                   subDescription={'Front-end stack: Next, React Query'}
+                                   link={'https://github.com/DreamLife37/Next.js_Project_Wildberries_Notice'}/>
                         <MyProject langDataButton={langData.nameButton} image={onlineShop}
                                    title={'Prototype online store'}
                                    description={'Stack: TS, React, Redux, Redux toolkit, React Router DOM, MUI, Formik, Firebase'}
