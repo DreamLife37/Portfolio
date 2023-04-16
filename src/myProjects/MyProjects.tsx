@@ -7,6 +7,9 @@ import imageForSocialNetwork from './../assets/images/SocialNetwork.jpg'
 import imageForProjectFood from './../assets/images/ProjectFood.jpg'
 import imageForProjectCards from './../assets/images/ProjectCards.jpg'
 import imageForWbNotice from './../assets/images/WbNotice.jpg'
+import imageForFinanceMarket from './../assets/images/finance_market.jpg'
+import imageForSpaseXShips from './../assets/images/spacex_ships.jpg'
+import imageForInternetShop from './../assets/images/internet_shop.jpg'
 import {Fade} from "react-awesome-reveal";
 import {myProjectsData} from "../data/myProjectsData";
 import React from "react";
@@ -21,6 +24,15 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
     };
     const wbNotice = {
         backgroundImage: `url(${imageForWbNotice})`
+    };
+    const financeMarket = {
+        backgroundImage: `url(${imageForFinanceMarket})`
+    };
+    const spacexShips = {
+        backgroundImage: `url(${imageForSpaseXShips})`
+    };
+    const internetShop = {
+        backgroundImage: `url(${imageForInternetShop})`
     };
     const forSocialNetwork = {
         backgroundImage: `url(${imageForSocialNetwork})`
@@ -43,6 +55,18 @@ export const MyProjects: React.FC<{ language: LanguageType }> = ({language}) => 
                            subTitle={langData.subTitle}
                            description={langData.description}/>
                     <div className={style.myProjects}>
+                        <MyProject langDataButton={langData.nameButton} image={internetShop}
+                                   title={'Internet shop HTML'}
+                                   description={'Stack: HTML, CSS, БЭМ, Responsive layout for mobile devices'}
+                                   link={'https://github.com/DreamLife37/HTML_Internet_Shop'}/>
+                        <MyProject langDataButton={langData.nameButton} image={spacexShips}
+                                   title={'SpaceX ships'}
+                                   description={'Stack: TS, React, Redux, Redux toolkit, Jest, React Testing Library'}
+                                   link={'https://github.com/DreamLife37/React_Project_SpaceX'}/>
+                        <MyProject langDataButton={langData.nameButton} image={financeMarket}
+                                   title={'Company reports'}
+                                   description={'Stack: TS, React, Redux, Redux toolkit, Jest, React Testing Library'}
+                                   link={'https://github.com/DreamLife37/React_Project_Finance_Market'}/>
                         <MyProject langDataButton={langData.nameButton} image={wbNotice}
                                    title={'Wildberries notice'}
                                    description={'Back-end stack: Node JS, Express, MongoDB'}
